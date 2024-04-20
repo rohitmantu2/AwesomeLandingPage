@@ -1,145 +1,309 @@
 <!DOCTYPE html>
-<html>
+    <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Awesome landing page</title>
-        <link rel="stylesheet" href="style01.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <!-- <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon"> -->
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>MagicXpert</title>
     </head>
+    <style>
+    .homeImg
+    {
+      width: 43%;
+      height: 60%;
+      position: absolute;
+      top: 8em;
+      left:0;
+    }
+    .products__img
+    {
+        height: 80%;
+    width: 84%;
+    }
+   
+    </style>
     <body>
-        <header>
-            <div id="header-container">
-                <div class="col-3">
-                  <img  class="logo" src="images/awesome-logo.png" alt="awesome-logo" width="143" height="18">
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/logo.png" style="width: 9vw;" alt="">
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#specs" class="nav__link">Specs</a>
+                        </li>
+                        <!-- <li class="nav__item">
+                            <a href="#case" class="nav__link">Case</a>
+                        </li> -->
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">Products</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
                 </div>
-                <div class="col-3">
-                    <nav>
-                        <ul class="menu">
-                            <a href="Home.html" class="menu-li"><li>MagicXpert</li></a>
-                            <a href="Home.html"class="menu-li"><li>Features</li></a>
-                            <a href="Home.html"class="menu-li"><li>About</li></a>
-                            <a href="Home.html"class="menu-li"><li>Signup</li></a>
-                        </ul>
-                    </nav>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
                 </div>
-                <div class="col-3">
-                    <a href="GetStarted.html" class="button-header">Get Started</a>
-                </div>
-            </div>
+            </nav>
         </header>
-        <div id="main-container">
-            <div id="top-section">
-                <div id="top-section-main">
-                    <h1>
-                        Awesome looks so good
-                    </h1>
-                    <p>Awesome is the landing page you wish you had when you started</p>
-                    <img class="play-bottom" src="images/playbotton.png" alt="play_bottom" height="120px" width="120px">
-                 <div class="form">
-                    <form>
-                    <h6>sign up for  free 30 days trial</h6>
-                    <input type="text" name="name" placeholder="Name">
-                    <input type="text" name="email" placeholder="Email">
-                    <button type="submit">Start free trials</button>
-                    </form>
-                  </div>
-                </div>
-            </div>
-            <div id="content-features">
-                <h1>awesome is an amazing landing page bought to you on everyone's favourite platform, <span style="color:#ffffff;background-color:#6dc77a;padding:2px">BUYMe</span> imagine what is next.</h1>
-                <div id="image-features">
-                    <div class="col-3">
-                      <img src="images/Couple.png" alt="couple_image">
-                      <h3>Mobile First,Always</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi veniam debitis vitae dolor, non dolorem, possimus quidem impedit dicta vero dolorum. Cum, laudantium ducimus explicabo quo molestiae quam doloremque veritatis?</p>
+
+        <main class="main">
+            <!--=============== HOME ===============-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div>
+                        <img src="https://cdn.pixabay.com/photo/2023/10/19/12/45/ai-generated-8326627_1280.jpg" alt="" class="homeImg">
                     </div>
-                    <div class="col-3">
-                        <img src="images/Girlphone.png" alt="couple_image">
-                        <h3>Socially social</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi veniam debitis vitae dolor, non dolorem, possimus quidem impedit dicta vero dolorum. Cum, laudantium ducimus explicabo quo molestiae quam doloremque veritatis?</p>
-                    </div>
-                    <div class="col-3">
-                        <img src="images/Friends.png" alt="couple_image">
-                        <h3>Friends forever</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi veniam debitis vitae dolor, non dolorem, possimus quidem impedit dicta vero dolorum. Cum, laudantium ducimus explicabo quo molestiae quam doloremque veritatis?</p>
-                    </div>
-                </div>
-            </div>
-            <div id="showcase1">
-              <div class="showcase">
-                   <div class="col-2">
-                     <img src="images/Apple.png" alt="showcase1"width="100%">
-                  </div>
-                    <div class="col-2">
-                      <div class="showcase-text">
-                         <h1 class="showcase-title">yes,it even looks good on an Iphone</h1>
-                         <p>My website is responsive and work properly on all devices.This is the awesome way</p>
-                       </div>
-                     </div>
-                
-                </div>
-            </div>
-            <div id="showcase2">
-                <div class="showcase">
-                     <div class="col-2">
-                        <div class="showcase-text">
-                            <h1 class="showcase-title">How bout Ipad? Yup that too!</h1>
-                            <p>It does not matter which devices you are on. Awesome is always look awesome.Its in the name after all. </p>
-                          </div>
-                    </div>
-                      <div class="col-2">
-                        <img src="images/Ipad (1).png" alt="showcase1"width="100%">
-                       </div>
-                  
-                 </div>
-            </div>
-            <div id="last-section">
-                <div class="last-section-text">
-                    <h3>What are you waiting for?</h3>
-                    <p>Get started today and try for free</p>
-                    <p style="text-align:center"><a href="#"class="trybutton">Try Today</a></p>
-                </div>
-            </div>
-            <div id="form-section">
-                
-                <div class="col-2">
-                    <div class="left-section">
-                       <h1 class="showcase-title" style="line-height: 1.1em;">Hear what our fans say about awesome</h1>
-                       <p style="font-style: italic;">This is an amazing website i have ever seen. <br><strong>-Amit</strong></p>
-                     </div>
-                </div>
-                <div class="col-2">
-                    <form class="signupform">
-                        <h6>sign up for a free trial</h6>
-                        <input type="text" name="name" placeholder="Name"><br>
-                        <input type="text" name="email" placeholder="E-mail"><br>
-                        <button type="submit" class="button-last">Start Free Trial</button>
-                        <p style="font-size: 11px;">we didn't share our customer information with anyone.check out our <a href="#">privacy policy</a>for more information</p>
-                    </form>
                     
+                    <div class="home__data">
+                        <div class="home__header">
+                            <h1 class="home__title">CCTV</h1>
+                            <h2 class="home__subtitle">MagicXpert Pro CCTV</h2>
+                        </div>
+
+                        <div class="home__footer">
+                            <h3 class="home__title-description">Overview</h3>
+                            <p class="home__description">The MagicXpert Pro HD CCTV System is your ultimate security partner.
+                                 Whether you’re protecting your home, business, or industrial facility, our cutting-edge cameras provide round-the-clock surveillance and peace of mind.
+                            </p>
+                            <!-- <a href="#" class="button button--flex">
+                                <span class="button--flex">
+                                    <i class="ri-shopping-bag-line button__icon"></i></i> Add to Bag
+                                </span>
+                                <span class="home__price">$299</span>
+                            </a> -->
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
             
-        </div>
-        <footer>
-            <div class="footer-section">
-                <div class="social-section">
-                    <div class="centre">
-                      <img src="images/Twitter.png" alt="twitter-logo" height="52px" width="52px">
+
+            <!--=============== SPECS ===============-->
+            <section class="specs section grid" id="specs">
+                <h2 class="section__title section__title-gradient">Specs</h2>
+
+                <div class="specs__container container grid">
+                    <div class="specs__content grid">
+
+    
+                        <div class="specs__data">
+                            
+                            <h3 class="specs__title">Crystal-Clear Video Quality</h3>
+                            <span class="specs__subtitle">1080p resolution</span>
+                        </div>
+    
+                        <div class="specs__data">
+                            <h3 class="specs__title">Night Vision</h3>
+                            <span class="specs__subtitle">Clear night vision up to 30 meters </span>
+                        </div>
+    
+                        <div class="specs__data">
+                            <h3 class="specs__title">Wide-Angle Coverage</h3>
+                            <span class="specs__subtitle">120-degree field of view</span>
+                        </div>
+                        <div class="specs__data">
+                            <h3 class="specs__title">Smartphone Access</h3>
+                            <span class="specs__subtitle">view live video, and review recorded clips—all from your smartphone.
+                            </span>
+                        </div>
+                        <div class="specs__data">
+                            <h3 class="specs__title">Weatherproof Design</h3>
+                            <span class="specs__subtitle"> IP66 weatherproof rating</span>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <img src="https://cdn.pixabay.com/photo/2023/06/10/13/04/camera-8053994_1280.jpg" alt="" class="specs__img">
                     </div>
                 </div>
-                <div class="social-section">
-                    <div class="centre">
-                      <img src="images/Instagram.png" alt="twitter-logo"height="52px" height="52px">
+            </section>
+
+            <!--=============== CASE ===============-->
+            <!-- <section class="case section grid" id="case">
+                <h2 class="section__title section__title-gradient">Case</h2>
+
+                <div class="case__container container grid">
+                    <div>
+                        <img src="assets/img/case.png" alt="" class="case__img">
+                    </div>
+
+                    <div class="case__data">
+                        <p class="case__description">With a comfortable and adaptable case so that you can 
+                            store it whenever you want, and keep your durability forever.
+                        </p>
+                        <a href="#" class="button button--flex">
+                            <i class="ri-information-line button__icon"></i> More info
+                        </a>
                     </div>
                 </div>
-                <div class="social-section">
-                    <div class="centre">
-                     <img src="images/Facebook.png" alt="twitter-logo"height="52px" width="52px">
+            </section> -->
+
+            <!--=============== DISCOUNT ===============-->
+            <!-- <section class="discount section">
+                <div class="discount__container container grid">
+                    <div class="discount__animate">
+                        <h2 class="discount__title">Immerse yourself in <br> your music</h2>
+                        <p class="discount__description">Get it now, up to 50% off.</p>
+                        <a href="#" class="button button--flex">
+                            <i class="ri-shopping-bag-line button__icon"></i> Shop Now
+                        </a>
+                    </div>
+
+                    <img src="assets/img/discount.png" alt="" class="discount__img">
+                </div>
+            </section> -->
+
+            <!--=============== PRODUCTS ===============-->
+            <section class="products section" id="products">
+                <h2 class="section__title section__title-gradient products__line">
+                <br> More Products
+                </h2>
+
+                <div class="products__container container grid">
+                    <article class="products__card">
+                        <div class="products__content">
+                            <img src="https://cdn.pixabay.com/photo/2013/07/12/19/22/biometrics-154662_1280.png" alt="" class="products__img">
+    
+                            <h3 class="products__title">biometric</h3>
+                         
+                        </div>
+                    </article>
+                    <article class="products__card">
+                        <div class="products__content">
+                            <img src="https://images.unsplash.com/photo-1697382608786-bcf4c113b86e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="products__img">
+    
+                            <h3 class="products__title">Access Control System</h3>
+                        </div>
+                    </article>
+                    <article class="products__card">
+                        <div class="products__content">
+                            <img src="https://cdn.pixabay.com/photo/2023/06/10/13/04/camera-8053994_1280.jpg" alt="" class="products__img">
+    
+                            <h3 class="products__title">CCTV</h3>
+                           
+    
+                   
+                        </div>
+                    </article>
+                    <!-- <article class="products__card">
+                        <div class="products__content">
+                            <img src="assets/img/product4.png" alt="" class="products__img">
+    
+                            <h3 class="products__title">Blue</h3>
+                        </div>
+                    </article>
+
+                    <article class="products__card">
+                        <div class="products__content">
+                            <img src="assets/img/product5.png" alt="" class="products__img">
+    
+                            <h3 class="products__title">Twilight gray</h3>
+
+                        </div>
+                    </article> -->
+                </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <a href="#" class="footer__logo">
+                    <img class="logo" src="assets/img/logo.png"  alt="">
+                </a>
+    
+                <div class="footer__content">
+                    <h3 class="footer__title">Products</h3>
+    
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Camera</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Access Control System</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">BioMetric</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Computer Networking</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="footer__content">
+                    <h3 class="footer__title">Support</h3>
+    
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Product help</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Register</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Updates</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Provides</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="footer__content">
+                    <!-- <form action="" class="footer__form">
+                        <input type="email" placeholder="Email" class="footer__input">
+                        <button class="button button--flex">
+                            <i class="ri-send-plane-line button__icon"></i> Subscribe
+                        </button>
+                    </form> -->
+    
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-twitter-line"></i>
+                        </a>
                     </div>
                 </div>
-               <p style="text-align: center; padding-top:350px"> <img src="images/Logo+Light.png" alt="#" width="143px" height="18px"></p>
-               <p class="footer-text">&copy; copyright 2022 Awesome made with &hearts; in sitamarhi </p>
             </div>
+
+            <p class="footer__copy">
+                <p  target="_blank" class="footer__copy-link"style= "display: flex;
+                justify-content: space-evenly;" >&#169; MagicXpert. All right reserved</p>
+            </p>
         </footer>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-s-line scrollup__icon"></i>
+        </a>
+        
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
