@@ -347,9 +347,9 @@ img {
 }
 
 .specs__img {
-  width: 210px;
+  width: 180px;
   position: absolute;
-  top: 2rem;
+  top: 5rem;
   right: -4rem;
 }
 
